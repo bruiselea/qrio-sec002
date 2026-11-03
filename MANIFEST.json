@@ -9,32 +9,32 @@
   "output_ds_sha256": "ccf6a88bfb1d9b4dd7568bc8abbb386522518435efa564041ecfd29baeec2e82",
   "files": {
     ".gitignore": {
-      "bytes": 254,
-      "sha256": "4e616d5a6b1fe6db962a6063858dcdd474d050468b9f4e9b0aa78964fbfba27a"
+      "bytes": 338,
+      "sha256": "a5c39dcec65b7d7a11ba6d121423305a5aee4d488f5413dfd4e3eedbecef5691"
     },
     "CHANGELOG.md": {
-      "bytes": 2152,
-      "sha256": "114ef8c298bc9bace1dc71163eb28697b13bea263c1263e13590cea16a2d9862"
+      "bytes": 3030,
+      "sha256": "d2aaed9e8fbeb72abef4a9a249819ffd2bdd12d960b7c7aa004f3c0e80ab026c"
     },
     "LICENSE": {
       "bytes": 1090,
       "sha256": "e618f91b10da160cff50466f47f3b922a7c74cabe3817e775453ece38c3fb7ac"
     },
     "NOTICE.md": {
-      "bytes": 2715,
-      "sha256": "d83f434bed736ca0c4b57d97bf0e5542ede313645f185ad022b4926533c65ec1"
+      "bytes": 3190,
+      "sha256": "92d04f7beacead922d23289ad8ec3ef7d391e7422a3a2f202296d232f8d84351"
     },
     "README.ja.md": {
-      "bytes": 4774,
-      "sha256": "3f96837213764c156496028d8717047ce9552c904260094c84f49f54b43919ef"
+      "bytes": 5012,
+      "sha256": "70720b41ce0e0ed7ccf9c5e4ca661569c4aaa7a31544241e9bf8272f0def5e6a"
     },
     "README.md": {
-      "bytes": 8428,
-      "sha256": "c293d98122e741cd1740c608f559266574b3c046c884d4e913386a9f7821c5bd"
+      "bytes": 9734,
+      "sha256": "35d863828988abd2a91e34e96ad81722a7d133c184f76518350b317c688db900"
     },
     "SECURITY.md": {
-      "bytes": 3632,
-      "sha256": "310e1ee5d357fc48db4b5acf4fc55eb1de70f80e4cefe1419d70ecc1737b656e"
+      "bytes": 4665,
+      "sha256": "17cc3e1ea1891f840e67d6d195fb9d41d54758c0632aec9e1fd01b31a15e192e"
     },
     "bootstrap-linux.sh": {
       "bytes": 566,
@@ -48,13 +48,17 @@
       "bytes": 39454,
       "sha256": "0a6993b9df3760c041ce462af9468acbf0a86f58faa651e1ae5f77eb521923c1"
     },
+    "docs/BOOT_FAILURE.ja.md": {
+      "bytes": 10361,
+      "sha256": "c953a30048f7688656b89df907f7f402fd6dc0531113fcbaa00baee98b826d86"
+    },
     "docs/RECOVERY.ja.md": {
-      "bytes": 5801,
-      "sha256": "e8ca2234d68d4e89f0a0bc62652a3df92e6b13af109096b94f51ba0461151788"
+      "bytes": 6321,
+      "sha256": "5bf99c44446f9528953f77c72407e533877548cafc0869c90f38b3219c052ba4"
     },
     "docs/REDISTRIBUTION.ja.md": {
-      "bytes": 3708,
-      "sha256": "c4467d48b19aa42b70053bd6b01bfe89a2a5b99a75aa58b4e1cd0ab21bea6dc3"
+      "bytes": 4112,
+      "sha256": "e2e22e8bea350a8f64d21fe3a605c73953dcda4a5942be6cccf0204a93036445"
     },
     "docs/TESTING.ja.md": {
       "bytes": 2761,
@@ -63,6 +67,10 @@
     "docs/WIRELESS_INSTALL.ja.md": {
       "bytes": 6833,
       "sha256": "830c5e8fcc110cf2d9c6a2a61daed0cbd09194e9a89f0e9033d8b1f8572fb708"
+    },
+    "docs/evidence/SEC001.json": {
+      "bytes": 2047,
+      "sha256": "66815a23a7b98f00d7c43d361190316ec19ca887ab4265244bca5e755e6c3929"
     },
     "onboarding/README.ja.md": {
       "bytes": 10768,
@@ -248,12 +256,67 @@
       "bytes": 51,
       "sha256": "ba652d5daafeb07a8d2d4dc88605b9dfed81538cd930a1e39e661c89a900d8bf"
     },
+    "requirements-wired.txt": {
+      "bytes": 35,
+      "sha256": "1da1b31bc8b047ed0996cc2323334cf1e3ac340a8b4dd6c147000a3cacd4275d"
+    },
     "tests/test_toolkit.py": {
       "bytes": 13844,
       "sha256": "7cd98010bdb8c2ca5a20c4c3e2f51d4a74acd19b6dee60e84401e4089a5a1082"
+    },
+    "wired/README.ja.md": {
+      "bytes": 12717,
+      "sha256": "6db1e4328d8324ea15c91e0262af7fada7cfe11ec3eb3cc99374211764f51c1a"
+    },
+    "wired/TESTING.ja.md": {
+      "bytes": 4026,
+      "sha256": "675fd249aece38985a63bd3f21c39d7220dff3773f4895de80c2ca123e95cd0f"
+    },
+    "wired/__init__.py": {
+      "bytes": 201,
+      "sha256": "3fd7522530a05dab94f4222801540e0179ebfac49605ac80a11760a3dbfa1e77"
+    },
+    "wired/__main__.py": {
+      "bytes": 5830,
+      "sha256": "b3c7ae43fbc62a0cef8f1c9bacf507dcd1eaef0fb4a17362cc1b2436f507dafc"
+    },
+    "wired/build_bridge.py": {
+      "bytes": 1980,
+      "sha256": "09f77e4a20dabd0d029e766f440b41787df8bf84db10053e17c564a9ba945cb3"
+    },
+    "wired/c3_uart_bridge/c3_uart_bridge.ino": {
+      "bytes": 2747,
+      "sha256": "e43637ff649af081f5978b677a58abca995ab0e1f3842d641aa4e6d0e6e701e2"
+    },
+    "wired/captures.py": {
+      "bytes": 2699,
+      "sha256": "1e60edd2dd1f218ebe9028fd160c23ccccd55f83150718060475e2b9ce426b1c"
+    },
+    "wired/legacy.py": {
+      "bytes": 2197,
+      "sha256": "44da6db50f9705034aedbd928b818558a7dfa6947ba28d52c2281c5a685e2a23"
+    },
+    "wired/recovery.py": {
+      "bytes": 4901,
+      "sha256": "d782ae224b968558b0bcf7071085d578c20c9bfeb573328a6287d305b8c106bd"
+    },
+    "wired/serial_link.py": {
+      "bytes": 8802,
+      "sha256": "c8635480ecb655dffba022aa39c887c3a31f889094b18af339ef0242545a10b5"
+    },
+    "wired/tests/__init__.py": {
+      "bytes": 77,
+      "sha256": "d6504659569fed7df1c0eed9a4ddfc5c70b2cbe6b6f1a95a33cbbcaf86901d6f"
+    },
+    "wired/tests/test_wired.py": {
+      "bytes": 21359,
+      "sha256": "5e3ef248333222748129dc11c52a4d965b1d2173b6e159d4ad57ef8c5a7783b8"
     }
   },
   "onboarding": "local card enrollment; user-supplied APK; authenticated status gate",
   "onboarding_hardware_qualification": "new public enrollment workflow not yet tested end to end on hardware",
-  "firmware_zip_contains_onboarding": false
+  "firmware_zip_contains_onboarding": false,
+  "wired": "UART two-pass encrypted capture and fixed one-byte stock-selector recovery",
+  "wired_hardware_qualification": "underlying operations used on one owned unit; new public CLI not tested end to end on hardware",
+  "firmware_zip_contains_wired": false
 }

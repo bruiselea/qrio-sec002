@@ -1,0 +1,47 @@
+{
+  "format": "qsl1-sec001-curated-incident-v1",
+  "incident_date": "2026-11-01",
+  "uart_recovery_date": "2026-11-03",
+  "units_observed": 1,
+  "provenance": "Manually curated from locally retained reports and captures; raw logs and device-specific data are not distributed.",
+  "observed": {
+    "staged_candidate_bytes": 26972,
+    "staged_candidate_readback_matched": true,
+    "stock_boot_after_stage_verified": true,
+    "activation_stopped_during_ble_reconnection": true,
+    "battery_restart_no_beep_reported": true,
+    "advertisements_not_detected_by_windows_and_pi": true,
+    "uart_full_capture_bytes": 65536,
+    "uart_independent_reads": 2,
+    "uart_independent_reads_equal": true,
+    "preserved_stock_ds1_bytes": 26845,
+    "preserved_stock_ds1_matches_original": true,
+    "ss1_other_39_bytes_match_original": true,
+    "ss1_marker_disabled": true,
+    "failed_ds2_matches_saved_sec001_candidate": true,
+    "ss2_matches_planned_candidate_reference": true,
+    "first_marker_request_acknowledged": true,
+    "first_marker_request_eeprom_changed": false,
+    "later_rom_wp_setup_and_eeprom_writes_verified": true,
+    "dev001_boot_after_wired_staging_and_selection_verified": true,
+    "existing_owner_read_status_after_dev001_boot_verified": true,
+    "owner_read_status_reply_bytes": 7
+  },
+  "offline_analysis": {
+    "candidate_reserved_ram_end": "0x20a200",
+    "candidate_executed_allocation_boundary": "0x20a200",
+    "boundary_from_referenced_layout_formula": "0x20a220",
+    "difference_bytes": 32,
+    "invalid_nonzero_table_pointer_can_fault": true,
+    "late_registration_can_escape_the_original_guard": true,
+    "counterexamples_reproduce_actual_device_fault": false
+  },
+  "not_established": {
+    "faulting_instruction_or_pc": null,
+    "actual_startup_table_pointer": null,
+    "boundary_difference_caused_the_boot_failure": null,
+    "standalone_marker_recovery_then_stock_boot_hardware_test": false,
+    "new_public_wired_cli_end_to_end_hardware_test": false,
+    "automatic_boot_rollback_present": false
+  }
+}

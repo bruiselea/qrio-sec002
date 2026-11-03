@@ -22,3 +22,8 @@ relay/local/
 *.qsl1.backup-*
 *.qsl1.lock
 .qsl1-*
+.venv-wired/
+*.elf
+*.map
+wired/c3_uart_bridge/build/
+wired/c3_uart_bridge/firmware/
