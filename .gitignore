@@ -1,0 +1,11 @@
+.venv/
+.private/
+__pycache__/
+*.pyc
+*.qsb
+*.receipt.json
+*.bin
+*.hex
+*.apk
+*.pem
+*.dpapi.json

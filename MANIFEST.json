@@ -1,0 +1,103 @@
+{
+  "automatic_boot_rollback": false,
+  "date": "2026-11-03",
+  "distribution": "independent source and replacement bytes; no stock image or private backups",
+  "files": {
+    ".gitignore": {
+      "bytes": 94,
+      "sha256": "945f14503c170f4b874788c7e222c38f87dcfcd695c818bf056aa2d2a127c397"
+    },
+    "CHANGELOG.md": {
+      "bytes": 529,
+      "sha256": "872f260a6a1a0f4224b1e1c3ca596b7035c63311a871c86d9faa35accc6a543b"
+    },
+    "LICENSE": {
+      "bytes": 1090,
+      "sha256": "e618f91b10da160cff50466f47f3b922a7c74cabe3817e775453ece38c3fb7ac"
+    },
+    "NOTICE.md": {
+      "bytes": 1797,
+      "sha256": "27338bae0fb66310b40a9a562c0953d19ba4f307a81751207a97fe1072934510"
+    },
+    "README.ja.md": {
+      "bytes": 4505,
+      "sha256": "d4735f8404bbe2cfacf32a394648fc37a56340f47215f8468435ef0d4aedfe8b"
+    },
+    "SECURITY.md": {
+      "bytes": 2176,
+      "sha256": "054e500bc10fd7ca4cb3d2c50f71f048b09ddd73bdbdf8839a6efa1b91cfef0e"
+    },
+    "bootstrap-linux.sh": {
+      "bytes": 566,
+      "sha256": "59c2f43a63610a63fe893d38416d1bb12c734170cb781963623bf8abcfe06a5b"
+    },
+    "docs/RECOVERY.ja.md": {
+      "bytes": 5801,
+      "sha256": "e8ca2234d68d4e89f0a0bc62652a3df92e6b13af109096b94f51ba0461151788"
+    },
+    "docs/REDISTRIBUTION.ja.md": {
+      "bytes": 2905,
+      "sha256": "0d33bb82c451b1df28534c282f9c5c16642a01652da8899649db023a669d1244"
+    },
+    "docs/TESTING.ja.md": {
+      "bytes": 2761,
+      "sha256": "a9a327bb9d5bd8760a69b91ae4c83b378951c8a455aabc13edb41becffea2b75"
+    },
+    "docs/WIRELESS_INSTALL.ja.md": {
+      "bytes": 6833,
+      "sha256": "830c5e8fcc110cf2d9c6a2a61daed0cbd09194e9a89f0e9033d8b1f8572fb708"
+    },
+    "patches/sec002-assembly.txt": {
+      "bytes": 1850,
+      "sha256": "25b12eb7dad213ee49297bf7ef8c52e2fde6a0e05428550de977823bb486c74a"
+    },
+    "patches/sec002.json": {
+      "bytes": 2013,
+      "sha256": "0766735689cc469f8a14cdb90aaa44485ae77360c396970d506541fd395a7ecb"
+    },
+    "qsl1sec/__init__.py": {
+      "bytes": 105,
+      "sha256": "877accd57bb0cf22fb38bda1e685537222b777053494db8139c5e4d8f3e4fdec"
+    },
+    "qsl1sec/__main__.py": {
+      "bytes": 4550,
+      "sha256": "bfee01f823c6d0a9a62dbae12634ad145b19be78397c69fae721949132157ea6"
+    },
+    "qsl1sec/image.py": {
+      "bytes": 5557,
+      "sha256": "9d2c5c9eb3ddd3d13f306ea8d7427bd479c6c862325368bfa0d4cf02a9eb2b2a"
+    },
+    "qsl1sec/install.py": {
+      "bytes": 11433,
+      "sha256": "8f5e19ead608cd718c72ba18d37af4cd6b8dca408ee6fcaac9bcbd95d3818dcf"
+    },
+    "qsl1sec/private.py": {
+      "bytes": 3200,
+      "sha256": "d08c71592838fc57d654acce920a1262ef6e375b998f032af1745a1ebd919c3d"
+    },
+    "qsl1sec/radio.py": {
+      "bytes": 13258,
+      "sha256": "53270f6184b170853977949e4f6ca4201dcd0e23bba87521d3ec71005adca664"
+    },
+    "requirements-build.txt": {
+      "bytes": 21,
+      "sha256": "4026896996503d662ae0d9b5db045d1d5ff511c681dbfc09f5d5a11ee06b28c5"
+    },
+    "requirements-linux.txt": {
+      "bytes": 51,
+      "sha256": "14a6088a0ddb0f1c55522ef02e16b39b98aa20e9501d8744e54caed82cf7ce24"
+    },
+    "tests/test_toolkit.py": {
+      "bytes": 13844,
+      "sha256": "7cd98010bdb8c2ca5a20c4c3e2f51d4a74acd19b6dee60e84401e4089a5a1082"
+    }
+  },
+  "firmware": "SEC002",
+  "format": "qsl1sec-public-release-v1",
+  "future_firmware_maintenance": "UART only",
+  "hardware_evidence": "one owned unit; SEC002 UART deployment; DEV001 wireless deployment separately",
+  "output_ds_sha256": "ccf6a88bfb1d9b4dd7568bc8abbb386522518435efa564041ecfd29baeec2e82",
+  "source_ds_sha256": "4679b688063dac92d7c326f3e98ba429291bf1140afc2f4b96a1694cb8741c81",
+  "version": "0.1.0",
+  "wireless_sec002_end_to_end_hardware_qualification": "experimental; not yet performed"
+}

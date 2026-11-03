@@ -1,0 +1,78 @@
+SEC002 independent patch source (MIT; see LICENSE)
+
+The JSON delta is authoritative; installation does not require an assembler.
+Thumb assembly, generated with Keystone Engine 0.9.2 for the reference image.
+No stock image, original instruction listing or SDK is included.
+
+In-place edits (RAM addresses):
+  0x205974: replace profile-init call with wrapper 0x206F44; wrapper calls native init first
+  0x2059C8: branch to advertising gate 0x206FE0
+  0x206EB1: route authenticated old OTA op9 to existing reject/session-clear path
+  0x206F12: return NotAuthorized (0x82)
+  0x206F40..0x207024: replace retired OTA signature-verifier region (228 bytes)
+  0x2074FB: permit the existing OTA rejection/session-clear branch
+  0x209635: version string SEC002
+
+The 228-byte region is zero-filled before inserting:
+  0x206F40: movs r0, #0x82; bx lr
+  0x206F44: wrapper below
+  0x206FE0: advertising gate below
+  0x20701C: 32-bit success flag, initially zero
+
+WRAPPER @ 0x206F44
+push {r4,r5,r6,lr}
+    bl #0x15792
+    ldr r5, =0x20701c
+    movs r4, #0
+    str r4, [r5]
+    ldr r6, =0x2005d8
+    ldrd r3,r6,[r6]
+    orrs r3,r6
+    bne done
+    ldr r0, =0x2005d2
+    ldrb r1, [r0]
+    cbz r1, done
+    cmp r1, #16
+    bhi done
+    ldr r2, =0x2005e4
+    ldr r2, [r2]
+    tst r2, #3
+    bne done
+    ldr r3, =0x20a130
+    cmp r2,r3
+    blo done
+    ldr r6, =0x20f000
+    cmp r2,r6
+    bhs done
+    add.w r3,r2,r1,lsl #3
+    cmp r3,r6
+    bhi done
+loop:
+    ldrb r3,[r2]
+    tst r3,#1
+    beq next
+    ldrh r3,[r2,#2]
+    cmp r3,#0xfa
+    beq disable
+    cmp r3,#0x2a
+    bne next
+disable:
+    ldrb r3,[r2]
+    bic r3,r3,#1
+    strb r3,[r2]
+    adds r4,#1
+next:
+    adds r2,#8
+    subs r1,#1
+    bne loop
+    str r4,[r5]
+done:
+    pop {r4,r5,r6,pc}
+
+ADVERTISEMENT GATE @ 0x206FE0
+ldr r3, =0x20701c
+    ldr r3,[r3]
+    cbz r3, refuse
+    b.w #0x14db4
+refuse:
+    bx lr

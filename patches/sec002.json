@@ -1,0 +1,45 @@
+{
+  "format": "qsl1sec-delta-v1",
+  "version": "SEC002",
+  "bytes": 26845,
+  "source_sha256": "4679b688063dac92d7c326f3e98ba429291bf1140afc2f4b96a1694cb8741c81",
+  "output_sha256": "ccf6a88bfb1d9b4dd7568bc8abbb386522518435efa564041ecfd29baeec2e82",
+  "rom_fwu_fingerprint_sha256": "0a8bd669f222619714ac29dd30a5e6b83e17056ad1d47d4d9a78b19764a4e3b5",
+  "patches": [
+    {
+      "ram_address": 2120052,
+      "original_sha256": "029113eea97544ee960f83ea9ff391a9882ff0fe11436152cae8e2204c669809",
+      "replacement_hex": "01f0e6fa"
+    },
+    {
+      "ram_address": 2120136,
+      "original_sha256": "b63fab50a9429462cd3ce0efc3197a4799c09d5c96a11b501e3f4f0cc9e1cd7f",
+      "replacement_hex": "01f00abb"
+    },
+    {
+      "ram_address": 2125489,
+      "original_sha256": "8f11b05da785e43e713d03774c6bd3405d99cd3024af334ffd68db663aa37034",
+      "replacement_hex": "1b"
+    },
+    {
+      "ram_address": 2125586,
+      "original_sha256": "4f0762b2d20d63bf3c01f5dbf2f9de33d234b076983b0f4ee990505cbb6d5893",
+      "replacement_hex": "82207047"
+    },
+    {
+      "ram_address": 2125632,
+      "original_sha256": "d04ee310105b2043cb944d3f7dc24b1cafa00290d7542a1c75a87aac2814ebad",
+      "replacement_hex": "8220704770b50ef624fc174d00242c60164ed6e90036334325d11548017811b3102920d8134a126812f0030f1bd1124b9a4218d3114eb24215d202ebc103b34211d8137813f0010f09d05388fa2b01d02a2b04d1137823f001031370013408320139eed12c6070bd1c702000d8052000d2052000e405200030a1200000f020000000000000000000000000000000000000000000000000000000000000000000024b1b680bb10df6e5be70471c70200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "ram_address": 2127099,
+      "original_sha256": "bb7208bc9b5d7c04f1236a82a0093a5e33f40423d5ba8d4266f7092c3ba43b62",
+      "replacement_hex": "40"
+    },
+    {
+      "ram_address": 2135605,
+      "original_sha256": "1e004afb8f9e7e378e3646ed68c7043068db4c9055d7a7bbf79974475eec42c9",
+      "replacement_hex": "534543303032"
+    }
+  ]
+}
