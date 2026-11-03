@@ -1,5 +1,7 @@
 # 未改造Q-SL1への配線なし初回導入
 
+日本語 | [English](WIRELESS_INSTALL.en.md)
+
 この手順は所有するQ-SL1に対して使います。使用するのはLinux PCまたはラズパイのBluetoothです。Windows標準BLE API/Web Bluetoothだけでは独自L2CAP CIDへ送れないため、WindowsからはSSHでLinux側を操作します。
 
 ```text

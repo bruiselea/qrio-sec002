@@ -1,6 +1,6 @@
 {
   "format": "qsl1sec-source-manifest-v2",
-  "date": "2026-11-03",
+  "date": "2026-11-04",
   "firmware": "SEC002",
   "relay": "XIAO ESP32C3; encrypted ESPHome API",
   "firmware_release_zip": "dist/qrio-sec002-toolkit-v0.1.0.zip",
@@ -13,32 +13,52 @@
       "sha256": "a5c39dcec65b7d7a11ba6d121423305a5aee4d488f5413dfd4e3eedbecef5691"
     },
     "CHANGELOG.md": {
-      "bytes": 3473,
-      "sha256": "95ba155bd4007a6166ade651932a8eb04ec6b01b484139d34b9b9963d62d8f75"
+      "bytes": 3972,
+      "sha256": "5d68213d94caf301d7c65e05b6281ec2c27c8089a0b7005fd34fc7155482619c"
     },
     "LICENSE": {
       "bytes": 1090,
       "sha256": "e618f91b10da160cff50466f47f3b922a7c74cabe3817e775453ece38c3fb7ac"
     },
+    "NOTICE.en.md": {
+      "bytes": 2780,
+      "sha256": "9d54e14bce3bb411550384a7ba089f9c4febffcbb1a469942e09e937741e482d"
+    },
     "NOTICE.md": {
-      "bytes": 3471,
-      "sha256": "b37c4e569efded8472e2c84075f4ce6822cda8569184013b59ec0842dcb1ad10"
+      "bytes": 3508,
+      "sha256": "2cf337b07c0047534573956e136e25ccfb5a367951273f2adaf45f5b5d45468e"
+    },
+    "README.en.md": {
+      "bytes": 8847,
+      "sha256": "30eb53300123e97f59bcbdc7c87bb30db6b485b3ed660f77f4bf43cb235d0f18"
+    },
+    "README.firmware.en.md": {
+      "bytes": 4064,
+      "sha256": "d720790dfdfd3307bb538f407871441dce684e067d4bee0a9d7197df56fb101e"
     },
     "README.ja.md": {
-      "bytes": 5012,
-      "sha256": "70720b41ce0e0ed7ccf9c5e4ca661569c4aaa7a31544241e9bf8272f0def5e6a"
+      "bytes": 5058,
+      "sha256": "e0352ba8340a05dd21b2b327354d11907b3b29fb87caa45700f9ea266422e3aa"
     },
     "README.md": {
-      "bytes": 10245,
-      "sha256": "46c371c7f6bbc0d5eedbd11c061680b1c5af0257c933c52ff71f089afe41dfb7"
+      "bytes": 10282,
+      "sha256": "4560921d41c3c5c0757fbb755ddce906c17029eb3e3d9a3b77854a14cf2653d3"
+    },
+    "SECURITY.en.md": {
+      "bytes": 4004,
+      "sha256": "e6feedf2cefad378aa7ffc9f80c0f470966c4981cb2717ecdf56cef56bec912b"
     },
     "SECURITY.md": {
-      "bytes": 4665,
-      "sha256": "17cc3e1ea1891f840e67d6d195fb9d41d54758c0632aec9e1fd01b31a15e192e"
+      "bytes": 4704,
+      "sha256": "9323c1df677161049211a2ec38e05ba5a35741583993d53172d77d50eb19105f"
+    },
+    "SOURCES.en.md": {
+      "bytes": 7716,
+      "sha256": "99b258d6cc1763aed97cc47b165d9a3088b279edd29cfd47b77be6cc57cee990"
     },
     "SOURCES.md": {
-      "bytes": 8973,
-      "sha256": "91412d957a0c1cd3bab69a20e49a04a4bf3e2606a5b5f7811b240c50670e6f2e"
+      "bytes": 9011,
+      "sha256": "91493a39d2c78c54e67f33324b27bfeb1aac2f7700130d1c5655c9c168c12d53"
     },
     "bootstrap-linux.sh": {
       "bytes": 566,
@@ -52,37 +72,65 @@
       "bytes": 39454,
       "sha256": "0a6993b9df3760c041ce462af9468acbf0a86f58faa651e1ae5f77eb521923c1"
     },
+    "docs/BOOT_FAILURE.en.md": {
+      "bytes": 9245,
+      "sha256": "550f5b57934e17761e09c27ca2b9973824b12616b78a0bb088b755c78875ba1f"
+    },
     "docs/BOOT_FAILURE.ja.md": {
-      "bytes": 10887,
-      "sha256": "dcd4d12c4418020ea24dd788b0bc57589e1c1664d7605b75afdf851d108085c6"
+      "bytes": 10930,
+      "sha256": "ef9718bc144c4686438d00e27ddcea60e228a575438455080f8e3e7e1ad999c3"
+    },
+    "docs/RECOVERY.en.md": {
+      "bytes": 4864,
+      "sha256": "f83820bd4201217d1f4c0c45fa167836c46b9bcc4032eac5d7ecc3a23149101a"
     },
     "docs/RECOVERY.ja.md": {
-      "bytes": 6321,
-      "sha256": "5bf99c44446f9528953f77c72407e533877548cafc0869c90f38b3219c052ba4"
+      "bytes": 6360,
+      "sha256": "34a283b319b3b7b10d3a08f8a483576e46bfed838763b60a3d7ed2aacc23ae4d"
+    },
+    "docs/REDISTRIBUTION.en.md": {
+      "bytes": 2915,
+      "sha256": "f4f49c0937e00b9e9b71b947ab2869c77c865566afc4751d87e9d93c69165611"
     },
     "docs/REDISTRIBUTION.ja.md": {
-      "bytes": 4112,
-      "sha256": "e2e22e8bea350a8f64d21fe3a605c73953dcda4a5942be6cccf0204a93036445"
+      "bytes": 4157,
+      "sha256": "3dcf667f53748adcfdc9979dcd584ef5b4dde4e2aa0f7cc146e4c249bb98b5af"
+    },
+    "docs/TESTING.en.md": {
+      "bytes": 2499,
+      "sha256": "911db4b266264c7bdb83bc81c6b06beea22470ea2a14807dc7fdc8002fd99d84"
     },
     "docs/TESTING.ja.md": {
-      "bytes": 2761,
-      "sha256": "a9a327bb9d5bd8760a69b91ae4c83b378951c8a455aabc13edb41becffea2b75"
+      "bytes": 2799,
+      "sha256": "e099cb5f411a21ef8669f2d2ae8074c893ab6352f64a551539202595851e3ae5"
+    },
+    "docs/WIRELESS_INSTALL.en.md": {
+      "bytes": 5550,
+      "sha256": "47bedf51d27dbc4a87fc080fba6986dbe8d2d689ec97f9ce0a8d1071e2de7546"
     },
     "docs/WIRELESS_INSTALL.ja.md": {
-      "bytes": 6833,
-      "sha256": "830c5e8fcc110cf2d9c6a2a61daed0cbd09194e9a89f0e9033d8b1f8572fb708"
+      "bytes": 6880,
+      "sha256": "689ecbf49dc5fb0847625dec9249cb3cf2e103e66a66038f5244427da3f16519"
     },
     "docs/evidence/SEC001.json": {
       "bytes": 2047,
       "sha256": "66815a23a7b98f00d7c43d361190316ec19ca887ab4265244bca5e755e6c3929"
     },
+    "onboarding/README.en.md": {
+      "bytes": 9458,
+      "sha256": "2717229e4f8a700d41fcf90e9c0ab70d25ac6f92411379939e1c3818fce246ac"
+    },
     "onboarding/README.ja.md": {
-      "bytes": 10987,
-      "sha256": "6279d305149be166155a79526ec06ac39b223daa3dd92d1a3403b15ce088964a"
+      "bytes": 11024,
+      "sha256": "0e80d51202bd6dd9c4bfe26053d9f5f3c6c610b6944e8dfb28d63f69094fc5c8"
+    },
+    "onboarding/TESTING.en.md": {
+      "bytes": 2523,
+      "sha256": "96e9db88de3d64f21539c1e54a7430c89683f487ab2061cc70f6d242d2eb8f5f"
     },
     "onboarding/TESTING.ja.md": {
-      "bytes": 3053,
-      "sha256": "50b2eb089f825c6c85a1c25bfee5aae886d7c66399382d51821060d6564b764b"
+      "bytes": 3091,
+      "sha256": "a7476c4343bacecf3cb4f2ab4f0c6d8948f84e1e68890145bea0f126cefdecdc"
     },
     "onboarding/__init__.py": {
       "bytes": 306,
@@ -156,17 +204,29 @@
       "bytes": 1090,
       "sha256": "e618f91b10da160cff50466f47f3b922a7c74cabe3817e775453ece38c3fb7ac"
     },
+    "relay/README.en.md": {
+      "bytes": 8372,
+      "sha256": "e394bdab707e21ec8e0ea57ba722f08b191b226c4ae9281a47d853e194ec348c"
+    },
     "relay/README.ja.md": {
-      "bytes": 9935,
-      "sha256": "91710bb80abda87fd0f283ee11c060ff7866dff4cdf1c523c68e3c545f65e2f3"
+      "bytes": 9972,
+      "sha256": "6f691cdbb0faab04c97c2d23192d0e81a2b92a9a9f791c8761ab4f7ae2a611c4"
+    },
+    "relay/SYSTEMD_HOMEKIT.en.md": {
+      "bytes": 5326,
+      "sha256": "ba7beb21a695d324f219508d91dc462213449565657cf8fe544e815d038e968e"
     },
     "relay/SYSTEMD_HOMEKIT.ja.md": {
-      "bytes": 6639,
-      "sha256": "be3d60fce654254908c72a4b26f9bbf777f48d92d2dfc95293e9533857a457a0"
+      "bytes": 6685,
+      "sha256": "57a6fdd9cd3aeff3d09c413777c9ba382e31622551178913a810119632f90bfc"
+    },
+    "relay/TESTING.en.md": {
+      "bytes": 2190,
+      "sha256": "f9d27cc91044686b437b2b36036ad4aa1648ea78e5359b123dc74d8923e588aa"
     },
     "relay/TESTING.ja.md": {
-      "bytes": 2437,
-      "sha256": "9c3eba2bbd874555f4029ffa7ae65cf081a4d9e08f630f918ace3733bed48b44"
+      "bytes": 2475,
+      "sha256": "54abe7db9e7bcf36f390e48dbb749b9fa8f4136788d35b5153c769f4736e1dca"
     },
     "relay/bluez_qrio_agent.py": {
       "bytes": 1945,
@@ -268,13 +328,21 @@
       "bytes": 13844,
       "sha256": "7cd98010bdb8c2ca5a20c4c3e2f51d4a74acd19b6dee60e84401e4089a5a1082"
     },
+    "wired/README.en.md": {
+      "bytes": 10953,
+      "sha256": "c28535f2a24172dc32f3558f2b084787e69b96bcd3aca770538e6e24a3b25842"
+    },
     "wired/README.ja.md": {
-      "bytes": 12952,
-      "sha256": "f235b0233b60ad3a6b2b987398c9909a16d1db84ac3ee4eb3351ab6362933621"
+      "bytes": 12989,
+      "sha256": "fa162db99a0a018530350e4d790c446bf19c352c4e27bc223f328550ad7a9962"
+    },
+    "wired/TESTING.en.md": {
+      "bytes": 3282,
+      "sha256": "56737773c7b56ab6142961a2e7c4eb5eabec34e4d5203476ee05dc9bad102e0d"
     },
     "wired/TESTING.ja.md": {
-      "bytes": 4026,
-      "sha256": "675fd249aece38985a63bd3f21c39d7220dff3773f4895de80c2ca123e95cd0f"
+      "bytes": 4064,
+      "sha256": "d18e1a518f63b9abba90f40d7f43377af7d108b901cef0421d6ff256a6ae54d2"
     },
     "wired/__init__.py": {
       "bytes": 201,
@@ -322,5 +390,9 @@
   "firmware_zip_contains_onboarding": false,
   "wired": "UART two-pass encrypted capture and fixed one-byte stock-selector recovery",
   "wired_hardware_qualification": "underlying operations used on one owned unit; new public CLI not tested end to end on hardware",
-  "firmware_zip_contains_wired": false
+  "firmware_zip_contains_wired": false,
+  "documentation_languages": [
+    "ja",
+    "en"
+  ]
 }

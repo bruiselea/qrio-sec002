@@ -1,5 +1,7 @@
 # 配布のしかた
 
+日本語 | [English](REDISTRIBUTION.en.md)
+
 本体差分キットの配布単位は`qrio-sec002-toolkit-v0.1.0.zip`と、そのZIP用の`SHA256SUMS.txt`です。最新の登録・中継コードは[リポジトリのソース](https://github.com/bruiselea/qrio-sec002)に収録し、旧v0.1.0 ZIPは変更していません。独自のコード・差分・説明文は同梱MIT Licenseで再配布できます。第三者の純正コードまで同じ許諾で配布できるという意味ではありません。[NOTICE.md](../NOTICE.md)も一緒に残してください。
 
 ## 含めるものと含めないもの

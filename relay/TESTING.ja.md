@@ -1,5 +1,7 @@
 # 中継コードの検証範囲
 
+日本語 | [English](TESTING.en.md)
+
 2026-11-03、所有するQ-SL1の1個体と、Seeed Studio XIAO ESP32C3で確認しました。
 
 | 項目 | 結果 |

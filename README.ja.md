@@ -1,5 +1,7 @@
 # SEC002 本体ファーム対策キット v0.1.0
 
+日本語 | [English](README.firmware.en.md)
+
 このページはQ-SL1本体へ適用するSEC002差分キットの説明です。全体の機能・必要なものは[トップREADME](README.md)、LAN中継の導入は[中継セットアップ](relay/README.ja.md)を参照してください。
 
 最新ソースには別途[有線バックアップ・限定復旧キット](wired/README.ja.md)と[文鎮化原因の技術報告](docs/BOOT_FAILURE.ja.md)もあります。旧v0.1.0 ZIPには有線キットを含めていません。

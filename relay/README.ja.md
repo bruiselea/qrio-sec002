@@ -1,5 +1,7 @@
 # XIAO ESP32C3によるQ-SL1のLAN中継
 
+日本語 | [English](README.en.md)
+
 このページは、玄関のXIAOを経由してQ-SL1を施解錠するためのセットアップ手順です。全体の機能・対応範囲は[トップREADME](../README.md)にあります。
 
 ## この手順でできること
