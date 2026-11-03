@@ -2,6 +2,8 @@
 
 日本語 | [English](REDISTRIBUTION.en.md)
 
+統合版[v0.9](https://github.com/bruiselea/qrio-sec002/releases/tag/v0.9)は、タグのソース一式`qrio-sec002-v0.9.zip`と`SHA256SUMS-v0.9.txt`を配布します。登録・中継・有線復旧・英語資料を含みます。以下のv0.1.0 ZIPは履歴用の旧配布物です。
+
 本体差分キットの配布単位は`qrio-sec002-toolkit-v0.1.0.zip`と、そのZIP用の`SHA256SUMS.txt`です。最新の登録・中継コードは[リポジトリのソース](https://github.com/bruiselea/qrio-sec002)に収録し、旧v0.1.0 ZIPは変更していません。独自のコード・差分・説明文は同梱MIT Licenseで再配布できます。第三者の純正コードまで同じ許諾で配布できるという意味ではありません。[NOTICE.md](../NOTICE.md)も一緒に残してください。
 
 ## 含めるものと含めないもの

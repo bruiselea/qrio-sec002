@@ -2,6 +2,8 @@
 
 日本語 | [English](README.en.md)
 
+**配布版：[v0.9（検証版）](https://github.com/bruiselea/qrio-sec002/releases/tag/v0.9)** — 登録・中継・有線復旧・英語資料を含むソース一式。[ZIP](https://github.com/bruiselea/qrio-sec002/releases/download/v0.9/qrio-sec002-v0.9.zip) ／ [SHA-256](https://github.com/bruiselea/qrio-sec002/releases/download/v0.9/SHA256SUMS-v0.9.txt)
+
 初代 **Qrio Smart Lock（Q-SL1）** を、登録済みの所有者鍵で施解錠し、iPhoneの「ホーム」から操作するためのコードと手順です。玄関にXIAO ESP32C3を置くことで、鍵から離れたラズパイへLAN経由で接続できます。
 
 本体の既知の保守用アクセスを閉じる **SEC002差分パッチ** も収録しています。中継と本体ファームの対策は、それぞれ独立した機能です。
@@ -121,7 +123,7 @@ cd qrio-sec002
 | [`relay/TESTING.ja.md`](relay/TESTING.ja.md) | 中継の仕組みと検証範囲 |
 | [`MANIFEST.json`](MANIFEST.json) | 最新ソースのファイル一覧とハッシュ |
 
-**登録・中継・有線コードは最新ソースから取得してください。** [v0.1.0 Release](https://github.com/bruiselea/qrio-sec002/releases/tag/v0.1.0)と[`dist/`の配布ZIP](dist/qrio-sec002-toolkit-v0.1.0.zip)はSEC002キット用で、登録・中継・有線コードを含みません。
+**登録・中継・有線コードと英語資料は[v0.9](https://github.com/bruiselea/qrio-sec002/releases/tag/v0.9)のZIP、または最新ソースに含まれます。** [v0.1.0 Release](https://github.com/bruiselea/qrio-sec002/releases/tag/v0.1.0)と[`dist/`の旧配布ZIP](dist/qrio-sec002-toolkit-v0.1.0.zip)はSEC002キット用で、これらの追加機能を含みません。
 
 独自部分はMIT Licenseです。純正ファーム、SDK、公式APK、個体のバックアップ、所有者鍵、実際のWi-Fi情報、生成済みXIAOファームは配布しません。[配布範囲と第三者の権利](NOTICE.md)を参照してください。
 

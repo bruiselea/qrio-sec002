@@ -1,4 +1,4 @@
-# SEC002 firmware protection kit v0.1.0
+# SEC002 firmware protection kit (included in v0.9)
 
 [日本語](README.ja.md) | English
 

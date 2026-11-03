@@ -2,6 +2,8 @@
 
 [日本語](README.md) | English
 
+**Release: [v0.9 (pre-release)](https://github.com/bruiselea/qrio-sec002/releases/tag/v0.9)** — complete source with enrollment, relay, wired recovery, and English guides. [ZIP](https://github.com/bruiselea/qrio-sec002/releases/download/v0.9/qrio-sec002-v0.9.zip) · [SHA-256](https://github.com/bruiselea/qrio-sec002/releases/download/v0.9/SHA256SUMS-v0.9.txt)
+
 Code and instructions for operating the original **Qrio Smart Lock (Q-SL1)** with registered owner credentials, including control from Apple's Home app. A XIAO ESP32C3 near the door relays Bluetooth over the LAN, allowing the Raspberry Pi to stay farther away.
 
 The repository also includes the **SEC002 firmware delta**, which closes specific maintenance interfaces. The relay and the lock firmware patch are separate features.
@@ -110,7 +112,7 @@ The relay requires the Pi/host. Standalone owner authentication on the XIAO, dir
 | [`docs/`](docs/) | Installation, recovery, incident report, redistribution and testing scope |
 | [`MANIFEST.json`](MANIFEST.json) | File list and hashes for the current source tree |
 
-**Obtain enrollment, relay, wired tools, and English guides from the latest source.** The existing [v0.1.0 release](https://github.com/bruiselea/qrio-sec002/releases/tag/v0.1.0) and [`dist/` ZIP](dist/qrio-sec002-toolkit-v0.1.0.zip) are the original SEC002 kit and do not contain these additions.
+**Enrollment, relay, wired tools, and English guides are included in the [v0.9 release](https://github.com/bruiselea/qrio-sec002/releases/tag/v0.9) ZIP or latest source.** The existing [v0.1.0 release](https://github.com/bruiselea/qrio-sec002/releases/tag/v0.1.0) and old [`dist/` ZIP](dist/qrio-sec002-toolkit-v0.1.0.zip) are the original SEC002 kit and do not contain these additions.
 
 Original project code is under the MIT License. Stock firmware, SDKs, APKs, device backups, owner keys, real Wi-Fi configuration, and generated XIAO firmware are not distributed. See [distribution scope and third-party rights](NOTICE.en.md) and [security scope](SECURITY.en.md).
 

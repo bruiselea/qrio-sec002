@@ -1,4 +1,4 @@
-# SEC002 本体ファーム対策キット v0.1.0
+# SEC002 本体ファーム対策キット（v0.9収録）
 
 日本語 | [English](README.firmware.en.md)
 

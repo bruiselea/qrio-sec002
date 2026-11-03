@@ -13,8 +13,8 @@
       "sha256": "a5c39dcec65b7d7a11ba6d121423305a5aee4d488f5413dfd4e3eedbecef5691"
     },
     "CHANGELOG.md": {
-      "bytes": 3972,
-      "sha256": "5d68213d94caf301d7c65e05b6281ec2c27c8089a0b7005fd34fc7155482619c"
+      "bytes": 4422,
+      "sha256": "56db67d425e8edb4956ff847acf32aebaf6e0737407f4a84a3f52e3fb2ca66d4"
     },
     "LICENSE": {
       "bytes": 1090,
@@ -29,20 +29,20 @@
       "sha256": "2cf337b07c0047534573956e136e25ccfb5a367951273f2adaf45f5b5d45468e"
     },
     "README.en.md": {
-      "bytes": 8847,
-      "sha256": "30eb53300123e97f59bcbdc7c87bb30db6b485b3ed660f77f4bf43cb235d0f18"
+      "bytes": 9302,
+      "sha256": "54ffca8eacc79b8cd8fe598783a70bcd602ddeaf75eaab889f5550e2e81e5a5f"
     },
     "README.firmware.en.md": {
-      "bytes": 4064,
-      "sha256": "d720790dfdfd3307bb538f407871441dce684e067d4bee0a9d7197df56fb101e"
+      "bytes": 4076,
+      "sha256": "f6a2454a666d7bdc53c7a96fcc243ab10052a956b4af51375cfc5142827bc522"
     },
     "README.ja.md": {
-      "bytes": 5058,
-      "sha256": "e0352ba8340a05dd21b2b327354d11907b3b29fb87caa45700f9ea266422e3aa"
+      "bytes": 5067,
+      "sha256": "8a1269371646fb6ee73acea096e4f593c13ec7ef2e8fd94cc3c68cd4a44ec641"
     },
     "README.md": {
-      "bytes": 10282,
-      "sha256": "4560921d41c3c5c0757fbb755ddce906c17029eb3e3d9a3b77854a14cf2653d3"
+      "bytes": 10729,
+      "sha256": "2025141a55aa13492fe2cc84233aff67bcd331ff8f3e0ec890b0b87be1c519d7"
     },
     "SECURITY.en.md": {
       "bytes": 4004,
@@ -89,12 +89,12 @@
       "sha256": "34a283b319b3b7b10d3a08f8a483576e46bfed838763b60a3d7ed2aacc23ae4d"
     },
     "docs/REDISTRIBUTION.en.md": {
-      "bytes": 2915,
-      "sha256": "f4f49c0937e00b9e9b71b947ab2869c77c865566afc4751d87e9d93c69165611"
+      "bytes": 3219,
+      "sha256": "4443db290021cb6a7a2f10254a2c7a7ad8f25acebb363aa62905d18150ee4b69"
     },
     "docs/REDISTRIBUTION.ja.md": {
-      "bytes": 4157,
-      "sha256": "3dcf667f53748adcfdc9979dcd584ef5b4dde4e2aa0f7cc146e4c249bb98b5af"
+      "bytes": 4449,
+      "sha256": "36b6879fc4fa82eccd445b27faabd6f6af72bf85d766e4dae20067eee2007bab"
     },
     "docs/TESTING.en.md": {
       "bytes": 2499,
@@ -394,5 +394,8 @@
   "documentation_languages": [
     "ja",
     "en"
-  ]
+  ],
+  "release_tag": "v0.9",
+  "release_archive": "qrio-sec002-v0.9.zip",
+  "release_archive_is_external_asset": true
 }

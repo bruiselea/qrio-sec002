@@ -2,6 +2,8 @@
 
 [日本語](REDISTRIBUTION.ja.md) | English
 
+The combined [v0.9 release](https://github.com/bruiselea/qrio-sec002/releases/tag/v0.9) distributes the tagged source as `qrio-sec002-v0.9.zip` and `SHA256SUMS-v0.9.txt`, including enrollment, relay, wired recovery and English documentation. The v0.1.0 ZIP described below remains a historical release.
+
 The original firmware delta release consists of `qrio-sec002-toolkit-v0.1.0.zip` and its `SHA256SUMS.txt`. Current enrollment/relay/wired tools and English documents are in the [repository source](https://github.com/bruiselea/qrio-sec002); the old ZIP has not been replaced. Original project code, patches and documentation use MIT. This does not license third-party stock code. Retain [NOTICE](../NOTICE.en.md).
 
 ## Included and excluded data
