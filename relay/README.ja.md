@@ -138,6 +138,7 @@ XIAOは鍵の室内側30cm〜1m程度でUSB給電します。金属扉へアン�
 ## 仕組み・検証・配布
 
 - [実装と検証範囲](TESTING.ja.md)
+- [参考資料・先行調査・利用基盤](../SOURCES.md)
 - [ESPHome Bluetooth proxy](https://esphome.io/components/bluetooth_proxy/)、[暗号化API](https://esphome.io/components/api/)
 - 独自ソース・設定・説明は[MIT License](LICENSE)。ESPHomeやPython依存には、それぞれのライセンスが適用されます。
 

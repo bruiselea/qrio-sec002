@@ -122,3 +122,7 @@ cd qrio-sec002
 **登録・中継・有線コードは最新ソースから取得してください。** [v0.1.0 Release](https://github.com/bruiselea/qrio-sec002/releases/tag/v0.1.0)と[`dist/`の配布ZIP](dist/qrio-sec002-toolkit-v0.1.0.zip)はSEC002キット用で、登録・中継・有線コードを含みません。
 
 独自部分はMIT Licenseです。純正ファーム、SDK、公式APK、個体のバックアップ、所有者鍵、実際のWi-Fi情報、生成済みXIAOファームは配布しません。[配布範囲と第三者の権利](NOTICE.md)を参照してください。
+
+## 参考資料・謝辞
+
+Q-SL1の先行調査として、**[bakueikozo氏のqriohack](https://github.com/bakueikozo/qriohack)** と **[honeylabの記事](https://honeylab.hatenablog.jp/entry/2023/06/03/090731)** の端子表・分解情報・独自ファーム開発を参照しました。メーカー資料、SDKの固定参照先、旧APK解析、ESPHome／Home Assistant等の利用基盤と、それぞれの利用範囲は[参考資料・先行調査への謝辞](SOURCES.md)へまとめています。

@@ -13,28 +13,32 @@
       "sha256": "a5c39dcec65b7d7a11ba6d121423305a5aee4d488f5413dfd4e3eedbecef5691"
     },
     "CHANGELOG.md": {
-      "bytes": 3030,
-      "sha256": "d2aaed9e8fbeb72abef4a9a249819ffd2bdd12d960b7c7aa004f3c0e80ab026c"
+      "bytes": 3473,
+      "sha256": "95ba155bd4007a6166ade651932a8eb04ec6b01b484139d34b9b9963d62d8f75"
     },
     "LICENSE": {
       "bytes": 1090,
       "sha256": "e618f91b10da160cff50466f47f3b922a7c74cabe3817e775453ece38c3fb7ac"
     },
     "NOTICE.md": {
-      "bytes": 3190,
-      "sha256": "92d04f7beacead922d23289ad8ec3ef7d391e7422a3a2f202296d232f8d84351"
+      "bytes": 3471,
+      "sha256": "b37c4e569efded8472e2c84075f4ce6822cda8569184013b59ec0842dcb1ad10"
     },
     "README.ja.md": {
       "bytes": 5012,
       "sha256": "70720b41ce0e0ed7ccf9c5e4ca661569c4aaa7a31544241e9bf8272f0def5e6a"
     },
     "README.md": {
-      "bytes": 9734,
-      "sha256": "35d863828988abd2a91e34e96ad81722a7d133c184f76518350b317c688db900"
+      "bytes": 10245,
+      "sha256": "46c371c7f6bbc0d5eedbd11c061680b1c5af0257c933c52ff71f089afe41dfb7"
     },
     "SECURITY.md": {
       "bytes": 4665,
       "sha256": "17cc3e1ea1891f840e67d6d195fb9d41d54758c0632aec9e1fd01b31a15e192e"
+    },
+    "SOURCES.md": {
+      "bytes": 8973,
+      "sha256": "91412d957a0c1cd3bab69a20e49a04a4bf3e2606a5b5f7811b240c50670e6f2e"
     },
     "bootstrap-linux.sh": {
       "bytes": 566,
@@ -49,8 +53,8 @@
       "sha256": "0a6993b9df3760c041ce462af9468acbf0a86f58faa651e1ae5f77eb521923c1"
     },
     "docs/BOOT_FAILURE.ja.md": {
-      "bytes": 10361,
-      "sha256": "c953a30048f7688656b89df907f7f402fd6dc0531113fcbaa00baee98b826d86"
+      "bytes": 10887,
+      "sha256": "dcd4d12c4418020ea24dd788b0bc57589e1c1664d7605b75afdf851d108085c6"
     },
     "docs/RECOVERY.ja.md": {
       "bytes": 6321,
@@ -73,8 +77,8 @@
       "sha256": "66815a23a7b98f00d7c43d361190316ec19ca887ab4265244bca5e755e6c3929"
     },
     "onboarding/README.ja.md": {
-      "bytes": 10768,
-      "sha256": "ad19b3793a6b1d93a0728b8a21195563a6ed061ff1eec5e4eab0955235358dd4"
+      "bytes": 10987,
+      "sha256": "6279d305149be166155a79526ec06ac39b223daa3dd92d1a3403b15ce088964a"
     },
     "onboarding/TESTING.ja.md": {
       "bytes": 3053,
@@ -153,8 +157,8 @@
       "sha256": "e618f91b10da160cff50466f47f3b922a7c74cabe3817e775453ece38c3fb7ac"
     },
     "relay/README.ja.md": {
-      "bytes": 9873,
-      "sha256": "6847555016c7fa20ca99c547acee3af99cb6c6ddfbd10a0758a41fa239774242"
+      "bytes": 9935,
+      "sha256": "91710bb80abda87fd0f283ee11c060ff7866dff4cdf1c523c68e3c545f65e2f3"
     },
     "relay/SYSTEMD_HOMEKIT.ja.md": {
       "bytes": 6639,
@@ -265,8 +269,8 @@
       "sha256": "7cd98010bdb8c2ca5a20c4c3e2f51d4a74acd19b6dee60e84401e4089a5a1082"
     },
     "wired/README.ja.md": {
-      "bytes": 12717,
-      "sha256": "6db1e4328d8324ea15c91e0262af7fada7cfe11ec3eb3cc99374211764f51c1a"
+      "bytes": 12952,
+      "sha256": "f235b0233b60ad3a6b2b987398c9909a16d1db84ac3ee4eb3351ab6362933621"
     },
     "wired/TESTING.ja.md": {
       "bytes": 4026,

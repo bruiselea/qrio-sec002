@@ -79,6 +79,8 @@ C3のUSBを先に接続してTXをアイドルHighにしてから、本体へ電
 
 先行調査の端子表・写真は[bakueikozo/qriohack](https://github.com/bakueikozo/qriohack)を参照します。同リポジトリの写真・コードや、純正SDKは転載していません。
 
+[honeylabの先行記事](https://honeylab.hatenablog.jp/entry/2023/06/03/090731)も参照しました。使用した資料・固定参照版・本プロジェクト側の実装範囲は[出典一覧](../SOURCES.md)にあります。
+
 ## 4. ROM応答と故障時バックアップを確認
 
 シリアルモニターなど、同じポートを使うアプリを閉じてから実行します。

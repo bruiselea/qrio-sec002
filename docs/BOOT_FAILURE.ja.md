@@ -38,7 +38,7 @@ ROMが起動設定を選択 → DS2をRAMへロード
 
 ### RAM境界に32バイトの差があった
 
-取得済み起動コードのオフライン実行と、当時参照したSDKの計算規約を比較すると、常駐領域末尾へ32を加えて16バイト境界へ整列する規約に対し、候補は追加コードの末尾をそのまま使っていました。
+取得済み起動コードのオフライン実行と、当時参照したSDKの計算規約を比較すると、常駐領域末尾へ32を加えて16バイト境界へ整列する規約に対し、候補は追加コードの末尾をそのまま使っていました。具体的な参照元は、第三者ミラーの固定コミットにある[`spar_setup.c`のGCC用境界計算](https://github.com/j123m456/WICED-Smart-SDK/blob/79d9f0fcdbea76140cb8f69e25067bd09ddf0e40/Wiced-Smart/spar/common/spar_setup.c#L132)と[`spar_ram.ld`の配置](https://github.com/j123m456/WICED-Smart-SDK/blob/79d9f0fcdbea76140cb8f69e25067bd09ddf0e40/Wiced-Smart/spar/gcc/spar_ram.ld#L100)です。メーカー公式配布先との区別や他の参照元は[出典一覧](../SOURCES.md)に記載しています。
 
 | 項目 | 純正 | SEC001 |
 | --- | --- | --- |
