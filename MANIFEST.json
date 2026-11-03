@@ -9,32 +9,32 @@
   "output_ds_sha256": "ccf6a88bfb1d9b4dd7568bc8abbb386522518435efa564041ecfd29baeec2e82",
   "files": {
     ".gitignore": {
-      "bytes": 193,
-      "sha256": "2df43e1369da2e77825d4c6bb234eb5e945754fe9746dab75062ff42caefa559"
+      "bytes": 254,
+      "sha256": "4e616d5a6b1fe6db962a6063858dcdd474d050468b9f4e9b0aa78964fbfba27a"
     },
     "CHANGELOG.md": {
-      "bytes": 1289,
-      "sha256": "21245848223bf1bd6686a47ef6582413cddf6c29290402dfb0dfc95f190190b6"
+      "bytes": 2152,
+      "sha256": "114ef8c298bc9bace1dc71163eb28697b13bea263c1263e13590cea16a2d9862"
     },
     "LICENSE": {
       "bytes": 1090,
       "sha256": "e618f91b10da160cff50466f47f3b922a7c74cabe3817e775453ece38c3fb7ac"
     },
     "NOTICE.md": {
-      "bytes": 2118,
-      "sha256": "10ab30e3020bd044acd29b851a453aadaeabfb75feb3012081fe09ad38e8680e"
+      "bytes": 2715,
+      "sha256": "d83f434bed736ca0c4b57d97bf0e5542ede313645f185ad022b4926533c65ec1"
     },
     "README.ja.md": {
       "bytes": 4774,
       "sha256": "3f96837213764c156496028d8717047ce9552c904260094c84f49f54b43919ef"
     },
     "README.md": {
-      "bytes": 7606,
-      "sha256": "c2479ce649e1997fe5cf7f7fdbbbd9de7b608846e0e64e13237de2739bf50b4a"
+      "bytes": 8428,
+      "sha256": "c293d98122e741cd1740c608f559266574b3c046c884d4e913386a9f7821c5bd"
     },
     "SECURITY.md": {
-      "bytes": 2176,
-      "sha256": "054e500bc10fd7ca4cb3d2c50f71f048b09ddd73bdbdf8839a6efa1b91cfef0e"
+      "bytes": 3632,
+      "sha256": "310e1ee5d357fc48db4b5acf4fc55eb1de70f80e4cefe1419d70ecc1737b656e"
     },
     "bootstrap-linux.sh": {
       "bytes": 566,
@@ -53,8 +53,8 @@
       "sha256": "e8ca2234d68d4e89f0a0bc62652a3df92e6b13af109096b94f51ba0461151788"
     },
     "docs/REDISTRIBUTION.ja.md": {
-      "bytes": 2905,
-      "sha256": "0d33bb82c451b1df28534c282f9c5c16642a01652da8899649db023a669d1244"
+      "bytes": 3708,
+      "sha256": "c4467d48b19aa42b70053bd6b01bfe89a2a5b99a75aa58b4e1cd0ab21bea6dc3"
     },
     "docs/TESTING.ja.md": {
       "bytes": 2761,
@@ -63,6 +63,46 @@
     "docs/WIRELESS_INSTALL.ja.md": {
       "bytes": 6833,
       "sha256": "830c5e8fcc110cf2d9c6a2a61daed0cbd09194e9a89f0e9033d8b1f8572fb708"
+    },
+    "onboarding/README.ja.md": {
+      "bytes": 10768,
+      "sha256": "ad19b3793a6b1d93a0728b8a21195563a6ed061ff1eec5e4eab0955235358dd4"
+    },
+    "onboarding/TESTING.ja.md": {
+      "bytes": 3053,
+      "sha256": "50b2eb089f825c6c85a1c25bfee5aae886d7c66399382d51821060d6564b764b"
+    },
+    "onboarding/__init__.py": {
+      "bytes": 306,
+      "sha256": "ba39858d103fd85d302fbb83ad871ce365c1c9196c87a1259eea645461427658"
+    },
+    "onboarding/__main__.py": {
+      "bytes": 5275,
+      "sha256": "873324c3335b0a4a16fdfbe40d3df63d6427d1d62d9fcb068c78074fff840166"
+    },
+    "onboarding/enrollment.py": {
+      "bytes": 7591,
+      "sha256": "6639d5f6b3d287ee5b37c7ad9ce7119a63502e3f4ee6e14a8accb6b55b1e988b"
+    },
+    "onboarding/mq.py": {
+      "bytes": 3306,
+      "sha256": "03c17e2c7558868bfb33ccc1ee4e03c70cb5f41ac96c502516e45cd2588b19c8"
+    },
+    "onboarding/runtime.py": {
+      "bytes": 2684,
+      "sha256": "5c3bf04a322d432296dab5d13047687cce30bc006cb64d3ba470a77e86d0dedb"
+    },
+    "onboarding/tests/__init__.py": {
+      "bytes": 85,
+      "sha256": "a2136d15b32afa8722f38f6b25222c1a68caa0efbf3278018038fa2b3b4f2cd8"
+    },
+    "onboarding/tests/test_onboarding.py": {
+      "bytes": 26679,
+      "sha256": "5c2fb74e87ce94028bb381900fa09edfe4bfc53d8bca87896dd39a4263f4d25c"
+    },
+    "onboarding/vault.py": {
+      "bytes": 7922,
+      "sha256": "5116671c645fbeb3925ef8cab83f0442985b3aecae316d33e7ccc059aa8d1423"
     },
     "patches/sec002-assembly.txt": {
       "bytes": 1850,
@@ -105,12 +145,12 @@
       "sha256": "e618f91b10da160cff50466f47f3b922a7c74cabe3817e775453ece38c3fb7ac"
     },
     "relay/README.ja.md": {
-      "bytes": 9707,
-      "sha256": "ec2aa552721fa6eee34e8540d57172130af9b3c8e43c7fc13c06d71097873a7e"
+      "bytes": 9873,
+      "sha256": "6847555016c7fa20ca99c547acee3af99cb6c6ddfbd10a0758a41fa239774242"
     },
     "relay/SYSTEMD_HOMEKIT.ja.md": {
-      "bytes": 6550,
-      "sha256": "3bfa7c1e0c503b406b9fcdecd614ee30f447b4727c352fe7de2ce6586d4d78be"
+      "bytes": 6639,
+      "sha256": "be3d60fce654254908c72a4b26f9bbf777f48d92d2dfc95293e9533857a457a0"
     },
     "relay/TESTING.ja.md": {
       "bytes": 2437,
@@ -149,8 +189,8 @@
       "sha256": "5a72e900c3ed08854af0ac6d746aeb70fb4503b85a418110985bfb0b327caf8f"
     },
     "relay/qrio_live.py": {
-      "bytes": 8587,
-      "sha256": "f39d32d57699ecf0e733218824f922f901feffaf0b81c44a4e67567d9245357b"
+      "bytes": 8591,
+      "sha256": "eb877b5b889fcaca74f81a35565868a011e18c0dc0caf75694b20bd1f6ef6812"
     },
     "relay/qrio_protocol.py": {
       "bytes": 6817,
@@ -204,9 +244,16 @@
       "bytes": 51,
       "sha256": "14a6088a0ddb0f1c55522ef02e16b39b98aa20e9501d8744e54caed82cf7ce24"
     },
+    "requirements-onboarding.txt": {
+      "bytes": 51,
+      "sha256": "ba652d5daafeb07a8d2d4dc88605b9dfed81538cd930a1e39e661c89a900d8bf"
+    },
     "tests/test_toolkit.py": {
       "bytes": 13844,
       "sha256": "7cd98010bdb8c2ca5a20c4c3e2f51d4a74acd19b6dee60e84401e4089a5a1082"
     }
-  }
+  },
+  "onboarding": "local card enrollment; user-supplied APK; authenticated status gate",
+  "onboarding_hardware_qualification": "new public enrollment workflow not yet tested end to end on hardware",
+  "firmware_zip_contains_onboarding": false
 }

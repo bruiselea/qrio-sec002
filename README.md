@@ -4,12 +4,13 @@
 
 本体の既知の保守用アクセスを閉じる **SEC002差分パッチ** も収録しています。中継と本体ファームの対策は、それぞれ独立した機能です。
 
-**[LAN中継のセットアップ](relay/README.ja.md)** ／ **[常駐・HomeKitの設定](relay/SYSTEMD_HOMEKIT.ja.md)** ／ **[SEC002本体ファームの説明](README.ja.md)**
+**[カードから登録・操作鍵を用意](onboarding/README.ja.md)** ／ **[LAN中継のセットアップ](relay/README.ja.md)** ／ **[常駐・HomeKitの設定](relay/SYSTEMD_HOMEKIT.ja.md)** ／ **[SEC002本体ファームの説明](README.ja.md)**
 
 ## 何ができる？
 
 | やりたいこと | 提供するもの |
 | --- | --- |
+| カードから操作鍵を用意する | ローカル所有者登録、暗号化vault、認証確認後の鍵出力（新規登録の実機通し試験は未実施） |
 | PC・ラズパイから施錠／解錠する | 登録済み所有者鍵を使うコマンドライン操作・認証処理 |
 | iPhoneの「ホーム」から操作する | MQTTゲートウェイと、Home AssistantのHomeKit Bridgeへつなぐ手順 |
 | ラズパイを玄関から離して置く | XIAO ESP32C3による暗号化Wi-Fi／Bluetooth中継 |
@@ -47,7 +48,7 @@ Qrio Smart Lock Q-SL1
 | 自宅の2.4GHz Wi-Fi | XIAOとラズパイが通信できるLAN。XIAOのDHCP予約も設定 |
 | ビルド用PC | Python 3.12以上。XIAOへの初回書き込みに使用。Windowsの手順を掲載 |
 
-**オーナー登録カードの番号やQRコードだけでは、この公開版で施解錠を始められません。** 新しい所有者の登録や、回復vaultから`owner.json`を取り出す機能は未収録です。登録済み操作鍵を用意できることを、導入前に確認してください。
+**操作鍵をまだ持っていない場合は、[所有者登録・vaultの手順](onboarding/README.ja.md)から始めます。** 新規登録には本人のカードに加えて、本人が保管する対応旧APK（1.8.7の指定ライブラリー）が必要です。APKと係数表は同梱しません。既存の暗号化vaultからはAPKなしで読み取り専用の認証確認と鍵出力ができます。公開版の新規登録は実機通し試験未実施です。
 
 ### iPhoneの「ホーム」から使う場合に追加するもの
 
@@ -61,7 +62,7 @@ Home AssistantとMQTTの本体インストーラーは含みません。コマ�
 
 ### iPhoneから操作したい／LAN中継を使いたい
 
-1. 登録済みの`owner.json`と、上の機材を用意する。
+1. [カードから登録、または既存vaultを確認](onboarding/README.ja.md)し、登録済み`owner.json`と上の機材を用意する。既に操作鍵があればそのまま使う。
 2. リポジトリの最新ソースを取得する。
 3. XIAOへWi-Fi情報と中継ファームを設定する。
 4. ラズパイから、中継経由の認証付き状態取得を確認する。
@@ -89,6 +90,7 @@ cd qrio-sec002
 | XIAOによるLAN中継 | 1個体で所有者認証・状態取得に成功 |
 | iPhoneからの施錠 | ラズパイを離した配置で、本人の施錠確認とモーター正常完了記録を照合 |
 | 公開用ランタイム | Windows／ラズパイで中継関連の合成試験13件が通過 |
+| 公開版の所有者登録・vault | Windows／Piで合成試験29件が通過。新規登録の実機通し試験は未実施 |
 | SEC002本体 | 同じ1個体で有線導入・起動・既知経路の拒否を確認 |
 | 配布版SEC002の全無線導入 | 実機通し試験は未実施 |
 | 別個体・長期運転・新規環境の一括構築 | 未確認 |
@@ -101,12 +103,13 @@ cd qrio-sec002
 
 | 場所 | 内容 |
 | --- | --- |
+| [`onboarding/`](onboarding/) | カード登録、暗号化vault、旧vaultの検証、最小限の操作鍵の出力と試験 |
 | [`relay/`](relay/) | XIAOの中継設定、操作ランタイム、ビルド・常駐・HomeKitの手順 |
 | [`qsl1sec/`](qsl1sec/)・[`patches/`](patches/) | SEC002の固定差分と、生成・初回導入ツール |
 | [`docs/`](docs/) | SEC002の導入・復旧・配布・検証範囲 |
 | [`relay/TESTING.ja.md`](relay/TESTING.ja.md) | 中継の仕組みと検証範囲 |
 | [`MANIFEST.json`](MANIFEST.json) | 最新ソースのファイル一覧とハッシュ |
 
-**中継コードは最新ソースから取得してください。** [v0.1.0 Release](https://github.com/bruiselea/qrio-sec002/releases/tag/v0.1.0)と[`dist/`の配布ZIP](dist/qrio-sec002-toolkit-v0.1.0.zip)はSEC002キット用で、中継コードを含みません。
+**登録・中継コードは最新ソースから取得してください。** [v0.1.0 Release](https://github.com/bruiselea/qrio-sec002/releases/tag/v0.1.0)と[`dist/`の配布ZIP](dist/qrio-sec002-toolkit-v0.1.0.zip)はSEC002キット用で、登録・中継コードを含みません。
 
 独自部分はMIT Licenseです。純正ファーム、SDK、公式APK、個体のバックアップ、所有者鍵、実際のWi-Fi情報、生成済みXIAOファームは配布しません。[配布範囲と第三者の権利](NOTICE.md)を参照してください。

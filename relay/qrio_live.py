@@ -77,7 +77,7 @@ class QrioLive:
                 loop.call_soon_threadsafe(self.queue.put_nowait, bytes(data))
             self.stage = "subscribing"
             await self.client.start_notify(NOTIFY_UUID, notify)
-        except Exception:
+        except BaseException:
             await self.__aexit__(None, None, None)
             raise
         return self

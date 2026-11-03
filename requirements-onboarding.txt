@@ -1,0 +1,2 @@
+-r relay/requirements-runtime.txt
+pyelftools==0.32

@@ -17,3 +17,8 @@ __pycache__/
 secrets.yaml
 owner.json
 relay/local/
+.venv-onboarding/
+*.qsl1
+*.qsl1.backup-*
+*.qsl1.lock
+.qsl1-*

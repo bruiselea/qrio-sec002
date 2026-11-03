@@ -1,6 +1,6 @@
 # systemd常駐とiPhoneのホーム
 
-対象はLinux/Pi OSとsystemdの暗号化credentialを使う構成です。既存のHome Assistantと認証付きMQTT brokerがPi上で動いており、[単独の中継状態取得](README.ja.md)が成功した状態から進めます。所有者登録・MQTT broker・Home Assistant本体のインストーラーは含みません。
+対象はLinux/Pi OSとsystemdの暗号化credentialを使う構成です。既存のHome Assistantと認証付きMQTT brokerがPi上で動いており、[単独の中継状態取得](README.ja.md)が成功した状態から進めます。操作鍵の準備は[所有者登録・vaultの別手順](../onboarding/README.ja.md)を参照します。MQTT broker・Home Assistant本体のインストーラーは含みません。
 
 ## 実行用ファイルと環境
 

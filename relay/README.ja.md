@@ -31,7 +31,7 @@ XIAOはUSB給電し、Q-SL1とはBluetoothで通信します。本体のファ�
 | LAN | 自宅の2.4GHz Wi-Fi、XIAOとPiの相互通信、XIAOのDHCP予約 |
 | HomeKitも使う場合 | iPhone、セットアップ済みのHome Assistant・認証付きMQTT broker |
 
-**オーナーカードの番号だけでは始められません。** 新規オーナー登録・回復vaultからの鍵取り出しは含みません。登録済み操作鍵を用意できることを先に確認してください。操作用JSONの項目は`lock_uuid`、`phone_uuid`、`signing_private_pem`、`mq_public`、`challenge_a`、`challenge_b`です。
+操作鍵がまだない場合は[カード登録・既存vaultからの出力](../onboarding/README.ja.md)へ進みます。新規登録には本人が保管する対応旧APKが別途必要で、公開版の登録は実機通し試験未実施です。XIAO経由で登録する場合、このページの1〜3と中継設定ファイルの作成までは操作鍵なしで先に行えます。操作用JSONの認証項目は`lock_uuid`、`phone_uuid`、`signing_private_pem`、`mq_public`、`challenge_a`、`challenge_b`です。
 
 コマンドライン操作だけならHome Assistant・MQTT・iPhoneは不要です。`qrio_protocol.py`に必要な認証・フレーミングを収録しており、実行時に純正APK・SDKは使いません。
 
