@@ -1,0 +1,44 @@
+[Unit]
+Description=Q-SL1 owner-authenticated LAN/BLE relay gateway
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=qrio-sl1
+Group=qrio-sl1
+WorkingDirectory=/opt/qrio-relay
+ExecStart=/opt/qrio-relay/.venv/bin/python /opt/qrio-relay/qrio_home_daemon.py
+LoadCredentialEncrypted=owner.json:/etc/credstore.encrypted/qrio-relay-owner.cred
+LoadCredentialEncrypted=mqtt.json:/etc/credstore.encrypted/qrio-relay-mqtt.cred
+LoadCredentialEncrypted=relay.json:/etc/credstore.encrypted/qrio-relay-api.cred
+Environment=QRIO_RELAY_CONFIG=/run/credentials/qrio-relay.service/relay.json
+Environment=TZ=Asia/Tokyo
+StateDirectory=qrio-sl1-gateway
+StateDirectoryMode=0700
+UMask=0077
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+CapabilityBoundingSet=
+AmbientCapabilities=
+PrivateDevices=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictNamespaces=yes
+RestrictSUIDSGID=yes
+LockPersonality=yes
+MemoryDenyWriteExecute=yes
+SystemCallArchitectures=native
+IPAddressDeny=any
+IPAddressAllow=localhost
+# EXAMPLE: replace with the XIAO address reserved in your router.
+IPAddressAllow=192.168.1.123/32
+
+[Install]
+WantedBy=multi-user.target

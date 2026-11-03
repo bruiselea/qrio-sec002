@@ -1,0 +1,6 @@
+# Existing-owner runtime only. No APK, SDK or enrollment dependencies.
+bleak==3.0.2
+cryptography==50.0.1
+dbus-fast==5.2.0; sys_platform == "linux"
+paho-mqtt==2.1.0
+aioesphomeapi==46.12.0

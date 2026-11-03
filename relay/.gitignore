@@ -1,0 +1,8 @@
+.esphome/
+secrets.yaml
+local/
+*.bin
+*.elf
+*.map
+*.private.json
+__pycache__/

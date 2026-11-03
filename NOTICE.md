@@ -1,5 +1,7 @@
 # 配布範囲と第三者の権利
 
+`relay/`の独自ソース、独自プロトコル実装、ESPHome設定、説明文も同梱MIT Licenseの対象です。ESPHome、aioesphomeapi等の依存ソフト自体の権利・ライセンスは各プロジェクトに属します。実際のWi-Fi情報やAPI鍵を含むXIAOファームは同梱しません。
+
 この配布物の独自ツール、独自パッチ、説明文には同梱のMIT Licenseを適用します。MITの対象はこの配布物内の独自部分です。Qrio、Sony、Broadcom、Cypress、Infineon、Apple等からの公式配布・認定ではありません。
 
 以下は含めていません。

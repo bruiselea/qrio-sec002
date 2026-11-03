@@ -9,3 +9,11 @@ __pycache__/
 *.apk
 *.pem
 *.dpapi.json
+.venv-relay/
+.venv-firmware/
+.esphome/
+.tools/
+*.private.json
+secrets.yaml
+owner.json
+relay/local/

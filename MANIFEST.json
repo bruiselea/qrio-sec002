@@ -1,27 +1,36 @@
 {
-  "automatic_boot_rollback": false,
+  "format": "qsl1sec-source-manifest-v2",
   "date": "2026-11-03",
-  "distribution": "independent source and replacement bytes; no stock image or private backups",
+  "firmware": "SEC002",
+  "relay": "XIAO ESP32C3; encrypted ESPHome API",
+  "firmware_release_zip": "dist/qrio-sec002-toolkit-v0.1.0.zip",
+  "firmware_zip_contains_relay": false,
+  "source_ds_sha256": "4679b688063dac92d7c326f3e98ba429291bf1140afc2f4b96a1694cb8741c81",
+  "output_ds_sha256": "ccf6a88bfb1d9b4dd7568bc8abbb386522518435efa564041ecfd29baeec2e82",
   "files": {
     ".gitignore": {
-      "bytes": 94,
-      "sha256": "945f14503c170f4b874788c7e222c38f87dcfcd695c818bf056aa2d2a127c397"
+      "bytes": 193,
+      "sha256": "2df43e1369da2e77825d4c6bb234eb5e945754fe9746dab75062ff42caefa559"
     },
     "CHANGELOG.md": {
-      "bytes": 529,
-      "sha256": "872f260a6a1a0f4224b1e1c3ca596b7035c63311a871c86d9faa35accc6a543b"
+      "bytes": 1040,
+      "sha256": "865b9807ba96db207c6c9ac8076433e245d418b56bcb8141ae8616bb0747b97b"
     },
     "LICENSE": {
       "bytes": 1090,
       "sha256": "e618f91b10da160cff50466f47f3b922a7c74cabe3817e775453ece38c3fb7ac"
     },
     "NOTICE.md": {
-      "bytes": 1797,
-      "sha256": "27338bae0fb66310b40a9a562c0953d19ba4f307a81751207a97fe1072934510"
+      "bytes": 2118,
+      "sha256": "10ab30e3020bd044acd29b851a453aadaeabfb75feb3012081fe09ad38e8680e"
     },
     "README.ja.md": {
       "bytes": 4505,
       "sha256": "d4735f8404bbe2cfacf32a394648fc37a56340f47215f8468435ef0d4aedfe8b"
+    },
+    "README.md": {
+      "bytes": 2947,
+      "sha256": "158c898f068614d494fc574d76111a0d54a4fbdf39509957ee0e6dca102f8c69"
     },
     "SECURITY.md": {
       "bytes": 2176,
@@ -30,6 +39,14 @@
     "bootstrap-linux.sh": {
       "bytes": 566,
       "sha256": "59c2f43a63610a63fe893d38416d1bb12c734170cb781963623bf8abcfe06a5b"
+    },
+    "dist/SHA256SUMS.txt": {
+      "bytes": 97,
+      "sha256": "3d6746c91bbe0df14c94eab58e3d8515284387fcceddb35ae714bf29c341c847"
+    },
+    "dist/qrio-sec002-toolkit-v0.1.0.zip": {
+      "bytes": 39454,
+      "sha256": "0a6993b9df3760c041ce462af9468acbf0a86f58faa651e1ae5f77eb521923c1"
     },
     "docs/RECOVERY.ja.md": {
       "bytes": 5801,
@@ -79,6 +96,106 @@
       "bytes": 13258,
       "sha256": "53270f6184b170853977949e4f6ca4201dcd0e23bba87521d3ec71005adca664"
     },
+    "relay/.gitignore": {
+      "bytes": 76,
+      "sha256": "3a5b3b99674feb75157eec5f65f91b129e76aa053d85d26fadf6e7cf044a4ea9"
+    },
+    "relay/LICENSE": {
+      "bytes": 1090,
+      "sha256": "e618f91b10da160cff50466f47f3b922a7c74cabe3817e775453ece38c3fb7ac"
+    },
+    "relay/README.ja.md": {
+      "bytes": 8943,
+      "sha256": "8af1a9b531a7593ea0bae18ba7d97536732888866f667891a26cf59fb24b1a68"
+    },
+    "relay/SYSTEMD_HOMEKIT.ja.md": {
+      "bytes": 6550,
+      "sha256": "3bfa7c1e0c503b406b9fcdecd614ee30f447b4727c352fe7de2ce6586d4d78be"
+    },
+    "relay/TESTING.ja.md": {
+      "bytes": 2437,
+      "sha256": "9c3eba2bbd874555f4029ffa7ae65cf081a4d9e08f630f918ace3733bed48b44"
+    },
+    "relay/bluez_qrio_agent.py": {
+      "bytes": 1945,
+      "sha256": "cdab3ae36c48823df391613af6bd2888ca946443d0b12a9b663841be2b56f472"
+    },
+    "relay/build.py": {
+      "bytes": 1491,
+      "sha256": "b0e088c429c7cb5a8750fb86ac1d43c08faa53eda05691274c088fc551d622ee"
+    },
+    "relay/export_gateway_config.py": {
+      "bytes": 3104,
+      "sha256": "1fe361fef340ffdd007cb91ea10bde67e51e0ef3cdc8ab13984d923977c29657"
+    },
+    "relay/mqtt.example.json": {
+      "bytes": 109,
+      "sha256": "002d87e3d674fef83058372e39d58ff17d5f9230e3ad6e036785cb64cd29177a"
+    },
+    "relay/prepare.py": {
+      "bytes": 2111,
+      "sha256": "4dcb27764545dccffbb844403e23c857b17e6ec258a1b24520a5de1b886d6f92"
+    },
+    "relay/qrio-relay.service.example": {
+      "bytes": 1292,
+      "sha256": "5d050d02f56ad53565f44b28c3c3dba8fb4aca8086efb250568d086621d329ca"
+    },
+    "relay/qrio_esphome_transport.py": {
+      "bytes": 9784,
+      "sha256": "ee9a54d0f346231031b56dfa2ee4e2d1ecae2419d963e1b152e7b9a6c3733ee9"
+    },
+    "relay/qrio_home_daemon.py": {
+      "bytes": 13618,
+      "sha256": "5a72e900c3ed08854af0ac6d746aeb70fb4503b85a418110985bfb0b327caf8f"
+    },
+    "relay/qrio_live.py": {
+      "bytes": 8587,
+      "sha256": "f39d32d57699ecf0e733218824f922f901feffaf0b81c44a4e67567d9245357b"
+    },
+    "relay/qrio_protocol.py": {
+      "bytes": 6817,
+      "sha256": "df06441f12407e58c6a0b08e3f7fabb9e5911c95839ad0ce375d8755547b1533"
+    },
+    "relay/requirements-build.txt": {
+      "bytes": 19,
+      "sha256": "64eb582fb78c4de8784e1df408e3e25715a906a19d8a22bfa4af7f325e3aa4b5"
+    },
+    "relay/requirements-runtime.txt": {
+      "bytes": 187,
+      "sha256": "d848d4d48db44e8046355c667aa4453d25c9e8ecf9b62605b94d7224ee2e3c8c"
+    },
+    "relay/secrets.example.yaml": {
+      "bytes": 177,
+      "sha256": "db164869febb5b9fa6c001aaf890d8e46b3cbf62063b051f52449c8b2c1bd80e"
+    },
+    "relay/tests/test_gateway.py": {
+      "bytes": 331,
+      "sha256": "0aa79575f284653fbb54f274b8a00ccf6351d21d9aa68b139db2609ac38ebae3"
+    },
+    "relay/tests/test_protocol.py": {
+      "bytes": 2539,
+      "sha256": "500ce6cac8e371fcc13c98a19a99adcd48c5df2687a82fdd3142693c72421254"
+    },
+    "relay/tests/test_transport.py": {
+      "bytes": 8660,
+      "sha256": "5967a657ca2c2540002861a8c345d6674a351f23f1a0b75526ee79319eb344a3"
+    },
+    "relay/tests/verify_home_bridge.py": {
+      "bytes": 3082,
+      "sha256": "781df4cfa9c36686e03f5221c96f7eec158fb9a8c319d533cfb7e8efdf7759ef"
+    },
+    "relay/tests/verify_worker_latency.py": {
+      "bytes": 6076,
+      "sha256": "5cf2e93ca37d7f72dd8dded457d6888038fa3683fe0b10754652c3372dba58ee"
+    },
+    "relay/verify.py": {
+      "bytes": 354,
+      "sha256": "3f68fc86c0a88c67a8b3f43a31d1e198c49823355ac84727c0e31fe87ca83a15"
+    },
+    "relay/xiao-esp32c3.yaml": {
+      "bytes": 647,
+      "sha256": "08480d8dd8baa8afbb8962b12502c36cde6079dc17a9a0cc1f9115917bb305a7"
+    },
     "requirements-build.txt": {
       "bytes": 21,
       "sha256": "4026896996503d662ae0d9b5db045d1d5ff511c681dbfc09f5d5a11ee06b28c5"
@@ -91,13 +208,5 @@
       "bytes": 13844,
       "sha256": "7cd98010bdb8c2ca5a20c4c3e2f51d4a74acd19b6dee60e84401e4089a5a1082"
     }
-  },
-  "firmware": "SEC002",
-  "format": "qsl1sec-public-release-v1",
-  "future_firmware_maintenance": "UART only",
-  "hardware_evidence": "one owned unit; SEC002 UART deployment; DEV001 wireless deployment separately",
-  "output_ds_sha256": "ccf6a88bfb1d9b4dd7568bc8abbb386522518435efa564041ecfd29baeec2e82",
-  "source_ds_sha256": "4679b688063dac92d7c326f3e98ba429291bf1140afc2f4b96a1694cb8741c81",
-  "version": "0.1.0",
-  "wireless_sec002_end_to_end_hardware_qualification": "experimental; not yet performed"
+  }
 }
