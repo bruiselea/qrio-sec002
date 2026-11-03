@@ -13,8 +13,8 @@
       "sha256": "2df43e1369da2e77825d4c6bb234eb5e945754fe9746dab75062ff42caefa559"
     },
     "CHANGELOG.md": {
-      "bytes": 1040,
-      "sha256": "865b9807ba96db207c6c9ac8076433e245d418b56bcb8141ae8616bb0747b97b"
+      "bytes": 1289,
+      "sha256": "21245848223bf1bd6686a47ef6582413cddf6c29290402dfb0dfc95f190190b6"
     },
     "LICENSE": {
       "bytes": 1090,
@@ -25,12 +25,12 @@
       "sha256": "10ab30e3020bd044acd29b851a453aadaeabfb75feb3012081fe09ad38e8680e"
     },
     "README.ja.md": {
-      "bytes": 4505,
-      "sha256": "d4735f8404bbe2cfacf32a394648fc37a56340f47215f8468435ef0d4aedfe8b"
+      "bytes": 4774,
+      "sha256": "3f96837213764c156496028d8717047ce9552c904260094c84f49f54b43919ef"
     },
     "README.md": {
-      "bytes": 2947,
-      "sha256": "158c898f068614d494fc574d76111a0d54a4fbdf39509957ee0e6dca102f8c69"
+      "bytes": 7606,
+      "sha256": "c2479ce649e1997fe5cf7f7fdbbbd9de7b608846e0e64e13237de2739bf50b4a"
     },
     "SECURITY.md": {
       "bytes": 2176,
@@ -105,8 +105,8 @@
       "sha256": "e618f91b10da160cff50466f47f3b922a7c74cabe3817e775453ece38c3fb7ac"
     },
     "relay/README.ja.md": {
-      "bytes": 8943,
-      "sha256": "8af1a9b531a7593ea0bae18ba7d97536732888866f667891a26cf59fb24b1a68"
+      "bytes": 9707,
+      "sha256": "ec2aa552721fa6eee34e8540d57172130af9b3c8e43c7fc13c06d71097873a7e"
     },
     "relay/SYSTEMD_HOMEKIT.ja.md": {
       "bytes": 6550,

@@ -1,26 +1,47 @@
 # XIAO ESP32C3によるQ-SL1のLAN中継
 
-Seeed Studio XIAO ESP32C3＋外付け2.4GHzアンテナを玄関に置き、ラズパイからWi-Fi／LAN経由でQ-SL1を操作します。所有者認証はラズパイが担当します。
+このページは、玄関のXIAOを経由してQ-SL1を施解錠するためのセットアップ手順です。全体の機能・対応範囲は[トップREADME](../README.md)にあります。
+
+## この手順でできること
+
+- 鍵から離れたラズパイから、LAN越しのXIAO経由でQ-SL1を施解錠する。
+- 所有者秘密鍵をラズパイに保持し、XIAOを玄関のBluetooth担当にする。
+- 認証付きの状態取得を確認した後、MQTT・HomeKitの常駐構成へ接続する。
 
 ```text
 iPhone ホーム → Home Assistant / MQTT → ラズパイ
                                           ↓ 暗号化LAN
-                                  XIAO ESP32C3
+                               玄関のXIAO ESP32C3
                                           ↓ Bluetooth
                                         Q-SL1
 ```
 
-**所有する1個体で、中継経由の所有者認証・状態取得、ラズパイを離した状態でのiPhoneからの施錠とモーター完了を確認しました。** 別個体・長期運転・公開手順を用いた新規環境の一括構築は未確認です。SEC002の「純正から全無線で導入するインストーラー」の検証状況とは別です。
+XIAOはUSB給電し、Q-SL1とはBluetoothで通信します。本体のファーム更新とは独立したセットアップです。ここでのUSB書き込み先はXIAOです。
 
-## 前提と同梱範囲
+**1個体で中継経由の認証・状態取得と、ラズパイを離した配置でのiPhoneからの施錠・モーター正常完了を確認しました。** 別個体・長期運転・新規環境の一括構築は未確認です。SEC002の初回無線インストーラーの検証状況とは別です。
 
-- XIAO ESP32C3、対応アンテナ、USBデータケーブル、玄関でのUSB給電、自宅の2.4GHz Wi-Fiを用意します。Q-SL1との配線は不要です。
-- ビルド用PCはPython 3.12以上、ラズパイの実行用はPython 3.11以上を使います。
-- **登録済みの所有者操作鍵`owner.json`が必要です。** この追加には新規のオーナー登録や回復vaultからの鍵取り出しは含みません。カード番号だけでは動かせません。
-- 操作用JSONに必要な項目は`lock_uuid`、`phone_uuid`、`signing_private_pem`、`mq_public`、`challenge_a`、`challenge_b`です。自分の本体へ登録済みの鍵を用意し、内容を公開しないでください。
-- iPhoneへの公開には既存のHome Assistant・認証付きMQTT brokerが必要です。まず単独の状態取得を確認し、その後で既存HomeKitへつなぎます。
+## 始める前に用意するもの
 
-`qrio_protocol.py`に認証とフレーミングを整理しているので、この中継ランタイムには解析用モジュール、SDK、純正APKは不要です。純正ファーム、実機ダンプ、所有者鍵、Wi-Fi情報、ビルド済みイメージは同梱しません。
+| 分類 | 必要なもの |
+| --- | --- |
+| 鍵 | 自分のQ-SL1、正常な電池、**登録済みの操作鍵`owner.json`** |
+| 玄関の中継器 | Seeed Studio XIAO ESP32C3、対応する外付け2.4GHzアンテナ、USB電源 |
+| 初回書き込み | USBデータケーブル、Python 3.12以上のビルド用PC |
+| 操作ホスト | Python 3.11以上のラズパイ／Linuxホスト |
+| LAN | 自宅の2.4GHz Wi-Fi、XIAOとPiの相互通信、XIAOのDHCP予約 |
+| HomeKitも使う場合 | iPhone、セットアップ済みのHome Assistant・認証付きMQTT broker |
+
+**オーナーカードの番号だけでは始められません。** 新規オーナー登録・回復vaultからの鍵取り出しは含みません。登録済み操作鍵を用意できることを先に確認してください。操作用JSONの項目は`lock_uuid`、`phone_uuid`、`signing_private_pem`、`mq_public`、`challenge_a`、`challenge_b`です。
+
+コマンドライン操作だけならHome Assistant・MQTT・iPhoneは不要です。`qrio_protocol.py`に必要な認証・フレーミングを収録しており、実行時に純正APK・SDKは使いません。
+
+## 導入の順番
+
+1. ソースを取得し、ビルド用環境を用意する。
+2. 自宅Wi-Fiと暗号鍵をローカルで設定する。
+3. XIAOへUSBで書き込み、暗号化LAN接続を確認する。
+4. Piから鍵への状態取得と施錠を確認する。
+5. 必要に応じて、常駐サービスとHomeKitへ接続する。
 
 ## 1. ソースと環境を準備
 
